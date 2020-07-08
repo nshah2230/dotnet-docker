@@ -48,6 +48,7 @@ stages:
         demands:
         - Agent.OS -equals linux
         - Agent.OSArchitecture -equals ARM64
+        - Agent.Name -equals ddvsotx2l043
       matrix: dependencies.GenerateBuildMatrix.outputs['matrix.LinuxArm64v8']
       dockerClientOS: linux
       buildJobTimeout: ${{ parameters.linuxArmBuildJobTimeout }}
@@ -63,6 +64,7 @@ stages:
         demands:
         - Agent.OS -equals linux
         - Agent.OSArchitecture -equals ARM64
+        - Agent.Name -equals ddvsotx2l043
       matrix: dependencies.GenerateBuildMatrix.outputs['matrix.LinuxArm32v7']
       dockerClientOS: linux
       buildJobTimeout: ${{ parameters.linuxArmBuildJobTimeout }}
